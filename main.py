@@ -157,3 +157,14 @@ plt.title('Top 10 Countries by Visa-Free Access')
 plt.xticks(rotation=45)
 plt.show()
 
+# Example 1: Pie chart of Visa-Free Access distribution
+plt.figure(figsize=(8, 8))
+
+df['Visa-Free Access'].value_counts().head(10).plot(kind='pie', autopct='%1.1f%%', colors=plt.cm.Paired.colors)
+plt.title('Distribution of Visa-Free Access (Top 10)')
+plt.ylabel('')
+plt.show()
+
+
+
+
