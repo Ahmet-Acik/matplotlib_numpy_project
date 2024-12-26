@@ -165,6 +165,13 @@ plt.title('Distribution of Visa-Free Access (Top 10)')
 plt.ylabel('')
 plt.show()
 
-
+# Example 2: Scatter plot of Visa-Free Access by Rank
+df['Rank'] = df['Rank'].str.extract('(\d+)').astype(int)
+plt.figure(figsize=(10, 6))
+plt.scatter(df['Rank'], df['Visa-Free Access'], alpha=0.5)
+plt.xlabel('Rank')
+plt.ylabel('Visa-Free Access')
+plt.title('Visa-Free Access by Rank')
+plt.show()
 
 
